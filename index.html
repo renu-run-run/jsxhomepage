@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"> </div>
+    <script type="text/babel">
+        //jsx div Element
+
+        let div = <div style={{width:"100%", height:"100%"}}>
+              <div style={{backgroundColor:"red", color:"white",width:"100%" , height:"10vh", display:"flex", textAlign:"center",margin:"20px auto"}}>
+                <div style={{width:"50%", textAlign:"center"}}><h1>Koding Made Simple</h1></div>
+                <div style={{display:"flex", width:"50%", justifyContent:"space-evenly", textAlign:"center" }}>
+                <div style={{backgroundColor:"darkred"}}><h2 >Bootstrap</h2></div>
+                <h2>Themes</h2>
+                <h2>Blog</h2>
+              </div>
+              </div>
+              
+
+              <div style={{textAlign:"center",backgroundColor:"lightgray", width:"100%", height:"100%", color:"white",padding:"170px 0",color:"black"}}>
+                
+                    <h1 style={{fontSize:"50px"}}>Customize Bootstrap NavBar</h1>
+                    <p >Easy way to change NavBar Background,text and hover link color in Bootstrap </p>    
+                
+                
+              </div>
+            </div>
+        ReactDOM.render(div, document.getElementById('root'));
+
+    </script>
+</body>
+
+</html>
